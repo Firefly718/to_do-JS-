@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col">
+                    <h1>Мои задачи</h1>
+                    <form action="" method="POST" id="form">
+                        <div class="form-group">
+                            <label for="text">Описание задачи</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg" id="textInput" aria-describedby="textHelp">
+                                <div class="input-group-append">
+                                    <button class="btn btn-lg btn-outline-primary" type="submit" id="createBtn" disabled>Принять</button>
+                                </div>
+                            </div>
+                            <small id="textHelp" class="form-text text-muted">Поле для ввода задачи</small>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                           <div class="card-body">
+                               <h2>Активные задачи</h2>
+                               <ul class="list-group" id="todos">
+                                  <!-- <li>Активные задачи отсутствуют</li> -->
+                               </ul>
+                           </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Выполненные задачи</h2>
+                            <ul class="list-group" id="completed">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
